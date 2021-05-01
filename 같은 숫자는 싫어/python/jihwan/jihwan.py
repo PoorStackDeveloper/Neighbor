@@ -1,7 +1,10 @@
 def solution(val):
     result = []
     for i in range(len(val)):
-        if(val[i-1] != val[i]):
+        if i == 0 :
+            result.append(val[i])
+
+        elif(val[i] != val[i-1]):
             result.append(val[i])
     
     print(result)
