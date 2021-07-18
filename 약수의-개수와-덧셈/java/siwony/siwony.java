@@ -1,6 +1,6 @@
 class Solution {
     
-    boolean measure(int num){
+    boolean countMeasure(int num){
         int countMeasure = 1;
         for(int i = 1; i <= num / 2; i++)
             if(num % i == 0) countMeasure++;
@@ -11,7 +11,7 @@ class Solution {
     public int solution(int left, int right) {
         int answer = 0;
         for(;left <= right; left++)
-            answer += measure(left) ? left : left * -1;
+            answer += countMeasure(left) ? left : left * -1;
         
         return answer;
     }
