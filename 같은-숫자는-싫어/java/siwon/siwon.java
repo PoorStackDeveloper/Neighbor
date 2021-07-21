@@ -6,9 +6,9 @@ public class Solution {
         
         int prevNum = 18;
         for(int i : arr){
-            if(i != duplicationNum){
+            if(i != prevNum){
                 answer.add(i);
-                duplicationNum = i;
+                prevNum = i;
             }
         }
         return answer;
