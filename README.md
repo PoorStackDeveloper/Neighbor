@@ -8,8 +8,8 @@ questionName/langName/userName/..etc :: 문제를 업로드 할 때
 <ins> ✅ 커밋규칙 </ins>
 ```
 # brach 생성
-master -> feature/userName
+master -> userName
 
 # 병합
-feature/userName -> master [Pull-Request -> Merge]
+userName -> master [Pull-Request -> Merge]
 ```
