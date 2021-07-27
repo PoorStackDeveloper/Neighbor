@@ -11,6 +11,5 @@ questionName/langName/userName/..etc :: 문제를 업로드 할 때
 master -> feature/userName
 
 # 병합
-feature/userName -> develop [1st Pull-Request -> Merge]
-develop -> master [2nd Pull-Request -> ❌ Merge] :: *master merge는 지환이만 !
+feature/userName -> master [Pull-Request -> Merge]
 ```
