@@ -195,5 +195,27 @@ func solution(_ s:String) -> Int {
 
 ```
 
+##### 1. 숫자만 있다면 바로 숫자를 반환한다
+```if Int(s) != nil {}```
+
+##### 2. 글자가 있다면 i는 0부터 numString.count까지 반복하고 elem는 numString의 요소를 순서대로 반복한다.
+```for (i, elem) in numString.enumerated() {}```
+
+##### 3. s에 해당 글자가 있는지 검사한다.
+```if s.contains(elem) {}```
+
+
+##### 4. s에있는 해당 글자를 숫자로 변경한다.
+```ret = ret.replacingOccurrences(of: elem, with: numArr[i])```
+
+##### 5. s에 0이 들어가있다면 count ++
+```    
+    if ret.contains("0") {
+        count += 1
+    }
+```
+
+##### 6. count가 1보다 크면 0을 반환하고 1보다 작거나 같으면 ret을 반환한다
+```return count > 1 ? 0 : Int(ret)!```
 
 ### END!
