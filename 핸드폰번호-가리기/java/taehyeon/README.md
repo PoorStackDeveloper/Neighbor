@@ -13,6 +13,6 @@ ex) | "01033334444" |	"*******4444" |
 ---
 
 * `String.valueOf();` : String문자열로 바꿔주는 메서드
-> 여기서 `toString()`과 `String.valueOf()`의 차이는
+> 여기서 `toString()`과 `String.valueOf()`의 차이는  
 `toString()`은 **변환하고자하는 Object가 null**일경우 `NPE`를 발생시키고  
 `String.valueOf()`는 **"null" 문자열로 처리**합니다.
