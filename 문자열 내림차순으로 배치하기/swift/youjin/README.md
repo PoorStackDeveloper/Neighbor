@@ -68,7 +68,7 @@ reversedNames = names.sorted(by: { (s1: String, s2: String) -> Bool in
 ##### 6. by: 도 괄호도 다 지워보자 [후행 폐쇄]
 - ###### 문자열 정렬 클로저 는 sorted(by:)메서드의 괄호 외부에 후행 클로저로 작성할 수 있다.
 - ###### 클로저 표현식이 함수의 유일한 인수로 제공되고 해당 표현식을 후행 클로저로 제공하면 괄호를 작성할 필요가 없다.
-```reversedNames = names.sorted() { $0 > $1 }```
+```reversedNames = names.sorted { $0 > $1 }```
 
 #### 후행 클로저는 클로저가 충분히 길어서 한 줄에 인라인으로 작성할 수 없을 때 가장 유용하다.
 
