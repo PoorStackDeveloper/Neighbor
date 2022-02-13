@@ -1,3 +1,4 @@
+// 프로그래머스 - 노가다
 func solution(_ n:Int, _ m:Int) -> [Int] {
     
     var nArray = [Int]()
@@ -41,3 +42,22 @@ func solution(_ n:Int, _ m:Int) -> [Int] {
     
     return result
 }
+
+
+// 백준 - 유클리드 호제법
+let N = readLine()!.split(separator: " ").map{Int(String($0))!}
+var M = N.min()!
+var A = N.max()!%M
+var R = M
+
+while A != 0{
+    if M % A == 0{
+        R = A; break
+    }
+    
+    let T = A
+    A = M % A
+    M = T
+}
+
+print("\(R) \(N.reduce(1, *)/R)")
