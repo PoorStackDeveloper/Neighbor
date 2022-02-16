@@ -1,3 +1,5 @@
+// 백준 일곱난쟁이
+
 var height = [Int]()
 var limit = 100
 var result = [Int]()
